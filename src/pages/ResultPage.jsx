@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router";
 import SugarWarningBanner from "../components/SugarWarningBanner";
 
-
 const GRADE_COLOR = {
   A: "#009849",
   B: "#86BC25",
@@ -16,8 +15,6 @@ const GRADE_MESSAGE = {
   C: { label: "Sedang", desc: "Perhatikan porsi konsumsinya" },
   D: { label: "Kurang Baik", desc: "Sebaiknya batasi konsumsinya" },
 };
-
-
 
 function ResultPage() {
   const location = useLocation();
@@ -54,12 +51,6 @@ function ResultPage() {
       <header className="sticky top-0 z-10 w-full border-b border-slate-200 bg-white/90 backdrop-blur-md">
         <div className="max-w-lg mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-lg flex items-center justify-center bg-linear-to-br from-indigo-500 to-indigo-400 shrink-0">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" />
-                <path d="M8 12h8M12 8v8" />
-              </svg>
-            </div>
             <span className="font-jakarta font-extrabold text-lg tracking-tight text-indigo-950">NutriFriend</span>
           </div>
           <button
