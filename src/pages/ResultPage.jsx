@@ -70,7 +70,7 @@ function ResultPage() {
           {/* Title */}
           <h1 className="font-jakarta text-2xl font-extrabold tracking-tight text-indigo-950 animate-fade-up">Hasil Analisis</h1>
 
-          {/* ── Hero card ── */}
+          {/* Hero card */}
           <div className="animate-fade-up [animation-delay:60ms] bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
             <div className="flex gap-4 p-4 items-center">
               {/* Foto produk */}
@@ -93,7 +93,7 @@ function ResultPage() {
                   </div>
                 </div>
 
-                {result.confidence && <span className="self-start px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-500 border border-indigo-100">{result.confidence.toFixed(1)}% akurasi</span>}
+                {result.confidence && <span className="self-start px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-500 border border-indigo-100">{result.confidence.toFixed(1)}% confidence score</span>}
               </div>
             </div>
 
@@ -126,7 +126,7 @@ function ResultPage() {
             </div>
           </div>
 
-          {/* ── Kalkulator volume ── */}
+          {/* Kalkulator volume */}
           <div className="animate-fade-up [animation-delay:180ms] bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
             <div className="px-5 pt-5 pb-4">
               <p className="font-jakarta text-sm font-bold text-indigo-950 mb-0.5">Kalkulator Volume</p>
